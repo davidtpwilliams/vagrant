@@ -32,7 +32,7 @@ Vagrant.configure("2") do |config|
     aws.instance_type = "t2.micro"
     override.ssh.username = "ec2-user"
     aws.tags = {
-      'Name' => 'My Puppet Master',
+      'Name' => 'My Vagrant Server,
      }
     override.ssh.private_key_path = "/home/davidw/scripts/vagrant/awscert3.pem"
   end
